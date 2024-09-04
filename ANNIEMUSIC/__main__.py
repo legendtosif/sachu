@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await JARVIS.start()
     try:
-        await JARVIS.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await JARVIS.stream_call("https://telegra.ph/file/ee5c06d43f9ad52bd1724.mp4")
     except NoActiveGroupCall:
         LOGGER("ANNIEMUSIC").error(
             "ᴘʟᴇᴀsᴇ ᴛᴜʀɴ ᴏɴ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏғ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ\ᴄʜᴀɴɴᴇʟ.\n\nᴀɴɴɪᴇ ʙᴏᴛ sᴛᴏᴘᴘᴇᴅ..."
