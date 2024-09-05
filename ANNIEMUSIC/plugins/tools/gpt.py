@@ -24,13 +24,13 @@ def ensure_english(text):
         print(f"Error detecting or translating text: {e}")
     return text
 
-@app.on_message(filters.command(["arvis"], prefixes=["j", "J"]))
+@app.on_message(filters.command(["or"], prefixes=["y", "Y"]))
 async def chat_arvis(app, message):
     try:
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
         name = message.from_user.first_name
         if len(message.command) < 2:
-            await message.reply_text(f"Hello {name}, I am Jarvis. How can I help you today?")
+            await message.reply_text(f"Hello {name}, I am Yᴏʀ Fᴏʀɢᴇʀ . How can I help you today?")
         else:
             query = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
@@ -51,7 +51,7 @@ async def chat_gpt(app, message):
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
 
         if len(message.command) < 2:
-            await message.reply_text("Hello sir, I am Jarvis. How can I help you today?")
+            await message.reply_text("Hello sir, I am Yᴏʀ Fᴏʀɢᴇʀ. How can I help you today?")
         else:
             query = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
@@ -66,13 +66,13 @@ async def chat_gpt(app, message):
     except Exception as e:
         await message.reply_text(f"An error occurred: {e}")
 
-@app.on_message(filters.command(["iri"], prefixes=["s", "S"]))
+@app.on_message(filters.command(["Anirban"], prefixes=["A", "a"]))
 async def chat_annie(app, message):
     try:
         await app.send_chat_action(message.chat.id, ChatAction.TYPING)
         name = message.from_user.first_name
         if len(message.command) < 2:
-            await message.reply_text(f"Hello {name}, I am ANNIE. How can I help you today?")
+            await message.reply_text(f"Hello {name}, I am Aɴɪʀʙᴀɴ xD . How can I help you today?")
         else:
             query = message.text.split(' ', 1)[1]
             MODEL = "gpt-3.5-turbo"
