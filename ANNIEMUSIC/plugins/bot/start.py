@@ -33,11 +33,11 @@ ANNIE_VID = [
     "https://telegra.ph/file/8cf37f9fb1ba2b54df5e2.mp4",
     "https://telegra.ph/file/c10b0504086f81e968ff4.mp4",
     "https://telegra.ph/file/20e96aaac87819425b313.mp4",
-    "",
-    "https://telegra.ph/file/c6c1ac9aee4192a8a3747.mp4",
-    "https://telegra.ph/file/55c840c8eba0555318f0d.mp4",
-    "https://telegra.ph/file/e97715885d0a0cfbddaaa.mp4",
-    "https://telegra.ph/file/943bb99829ec526c3f99a.mp4"
+    "https://telegra.ph/file/f3d15634b671416a68cef.mp4",
+    "https://telegra.ph/file/6f507524d8f4f6f66867c.mp4",
+    "https://telegra.ph/file/45b3b3f0a215eb080b72a.mp4",
+    "https://telegra.ph/file/2d702eb41b72d35d4ea7e.mp4",
+    "https://telegra.ph/file/f3d15634b671416a68cef.mp4"
 ]
 
 STICKERS = [
