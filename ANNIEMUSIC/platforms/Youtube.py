@@ -9,7 +9,7 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from ANNIEUSIC.utils.database import is_on_off
+from ANNIEMUSIC.utils.database import is_on_off
 from ANNIEMUSIC.utils.formatters import time_to_seconds
 
 
