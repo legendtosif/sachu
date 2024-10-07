@@ -2,9 +2,6 @@ import asyncio
 import os
 import re
 import json
-import glob
-import random
-import logging
 from typing import Union
 
 import yt_dlp
@@ -12,12 +9,18 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from ANNIEMUSIC.utils.database import is_on_off
+from ANNIEUSIC.utils.database import is_on_off
 from ANNIEMUSIC.utils.formatters import time_to_seconds
 
 
+
+import os
+import glob
+import random
+import logging
+
 def cookie_txt_file():
-    folder_path = f"{os.getcwd()}/ANNIEMUSIC/cookies"
+    folder_path = f"{os.getcwd()}/cookies"
     filename = f"{os.getcwd()}/cookies/logs.csv"
     txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
     if not txt_files:
@@ -55,12 +58,12 @@ async def check_file_size(link):
     info = await get_format_info(link)
     if info is None:
         return None
-    
+
     formats = info.get('formats', [])
     if not formats:
         print("No formats found.")
         return None
-    
+
     total_size = parse_size(formats)
     return total_size
 
