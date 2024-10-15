@@ -5,6 +5,7 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
 from ANNIEMUSIC import app
+from ANNIEMUSIC.misc import SUDOERS
 from ANNIEMUSIC.utils.database import (
     get_active_chats,
     get_authuser_names,
