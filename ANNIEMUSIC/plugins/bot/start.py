@@ -28,23 +28,18 @@ from config import BANNED_USERS, AYUV
 from strings import get_string
 
 ANNIE_VID = [
-    "https://telegra.ph/file/8cf37f9fb1ba2b54df5e2.mp4",
-    "https://telegra.ph/file/1b83ad0f9639432014ec8.mp4",
-    "https://telegra.ph/file/8cf37f9fb1ba2b54df5e2.mp4",
-    "https://telegra.ph/file/c10b0504086f81e968ff4.mp4",
-    "https://telegra.ph/file/20e96aaac87819425b313.mp4",
-    "https://telegra.ph/file/f3d15634b671416a68cef.mp4",
-    "https://telegra.ph/file/6f507524d8f4f6f66867c.mp4",
-    "https://telegra.ph/file/45b3b3f0a215eb080b72a.mp4",
-    "https://telegra.ph/file/2d702eb41b72d35d4ea7e.mp4",
-    "https://telegra.ph/file/f3d15634b671416a68cef.mp4"
+    "https://envs.sh/pdm.mp4",
+    "https://envs.sh/pPX.mp4",
+    "https://envs.sh/pwQ.mp4",
+    "https://envs.sh/pw2.mp4",
+    "https://envs.sh/pwt.mp4",
 ]
 
 STICKERS = [
-    "CAACAgUAAx0Cd6nKUAACASBl_rnalOle6g7qS-ry-aZ1ZpVEnwACgg8AAizLEFfI5wfykoCR4h4E",
-    "CAACAgUAAx0CfL_LsAACCSRl_oru7uW8WAt3-L1pYQWe_1mxawACQw8AAj78MVeb3v2OFvEnNB4E",
-    "CAACAgEAAx0Cd6nKUAACATVl_rtAi9KCVQf8vcUC4FMDUfLP8wACHQEAAlEpDTnhphyRDaTrPR4E",
-    "CAACAgUAAx0Cd6nKUAACATJl_rsEJOsaaPSYGhU7bo7iEwL8AAPMDgACu2PYV8Vb8aT4_HUPHgQ",
+    "CAACAgUAAyEFAASERTelAAI382cT3YnjFmPTF8aYoCbN7ikbeHnYAAKODgACcTRYVfH4mb5uwQ8WHgQ",
+    "CAACAgQAAxkBAAIa22cUkSn6sxARgAMYggrje0ler1m_AAKzEQACpvFxHk9e0PkZypDLHgQ",
+    "CAACAgQAAxkBAAIa4WcUkYS3ufonuWDRX4MUAAER7vfp4wACNxAAAlT14FFJeYjfP3wcdR4E",
+    "CAACAgUAAxkBAAIa5GcUke_Tu84yQmzKcZa1kAhsH2xTAALlDQACnS4ZV3NxEzpOhxIhHgQ",
 
 ]
 
